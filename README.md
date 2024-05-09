@@ -13,6 +13,7 @@ This Electron application allows users to search for data in an Oracle database.
             FROM DBName.${selectedOption} 
             WHERE ${caseNameColumn} = :searchTerm
         `;
+
     const dataQuery = `
                 SELECT COUNT(*) 
                 FROM DBName.${selectedOption}
