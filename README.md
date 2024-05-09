@@ -8,7 +8,26 @@ This Electron application allows users to search for data in an Oracle database.
 2. Install dependencies by running `npm install`.
 3. Ensure you have Oracle Instant Client installed on your system.
 4. Set up the Oracle database connection details in `database.js`.
-5. Run the application using `npm start`.
+5.  const query = `
+            SELECT ${selectedOption}.* 
+            FROM DBName.${selectedOption} 
+            WHERE ${caseNameColumn} = :searchTerm
+        `;
+    const dataQuery = `
+                SELECT COUNT(*) 
+                FROM DBName.${selectedOption}
+                WHERE ${caseNameColumn} = :searchTerm AND ${column} IS NOT NULL
+            `;
+    
+**Note** Anywhere there is (DBName) requires your database name in front to allow the program to be specific when pulling info.
+
+7. if (selectedOption === "(Must Match Dropdown)") {
+            caseNameColumn = "(Must Match Column in DB)";
+        } else if (selectedOption === "(Must Match Dropdown)" || selectedOption === "(Must Match Dropdown)" || selectedOption === "(Must Match Dropdown)") {
+            caseNameColumn = "(Must Match Column in DB)";
+        }
+**Note** these must match the drop down names you list in your dropdown in the index1.html line 19-22.
+8. Run the application using `npm start`.
 
 ## Usage
 1. Launch the application by running `npm start`.
