@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align the content to the top */
+}
+
+.container {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Add some spacing from the top */
+}
+
+.container h1 {
+    margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+.Searchcontainer {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Add some spacing from the top */
+}
+
+.Searchcontainer h1 {
+    margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+#searchBar {
+    margin-bottom: 20px; /* Add some spacing below the search bar */
+}
+.Searchcontainer2{
+    position: absolute;
+    margin-top: 650px;
+    text-align: center; /* Center the content horizontally */
+    
+}
+#rows{
+    position: absolute;
+    margin-left:-1200px;
+    margin-top: 175px;
+}
+#table-Title{
+    text-decoration:underline;
+    font-weight: bold;
+    margin: 10px; /* Adds 10 pixels of margin around the element */
+}

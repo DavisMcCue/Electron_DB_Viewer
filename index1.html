@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Viewer</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Add this where you want to display search results -->
+    <div class="Searchcontainer">
+        <div id="searchBar">
+            <h1 class="title">Search Legacy System:</h1> <!-- Search title -->
+            <input type="text" id="userInput" placeholder="Enter your search term">
+            <button id="sendButton"disabled>Search</button>
+            <select id="dropdown" required>
+                <option value="" disabled selected hidden>Select an option...</option>
+                <option value="Table Name">Table Name</option>
+                <option value="Table Name">Table Name</option>
+                <option value="Table Name">Table Name</option>
+                <option value="Table Name">Table Name</option>
+              </select>
+        </div>
+        <h1>Search Results</h1>
+        <h2></h2>
+    </div>
+    <div id="rows"></div>
+    <div id="error"></div>
+
+    <!-- Second Search container -->
+    <div class="Searchcontainer2">
+        <h1 class="title">Spot Check Results:</h1> <!-- Search title -->
+        <div id="searchResults2"></div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
