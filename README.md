@@ -27,7 +27,10 @@ This Electron application allows users to search for data in an Oracle database.
         } else if (selectedOption === "(Must Match Dropdown)" || selectedOption === "(Must Match Dropdown)" || selectedOption === "(Must Match Dropdown)") {
             caseNameColumn = "(Must Match Column in DB)";
         }
+
+
 **Note** these must match the drop down names you list in your dropdown in the index1.html line 19-22.
+
 8. Run the application using `npm start`.
 
 ## Usage
