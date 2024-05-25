@@ -1,4 +1,4 @@
-# Electron OracleDB Search Application
+# Electron Viewer
 
 ## Description
 This Electron application allows users to search for data in an Oracle database. It provides a graphical user interface where users can input search terms and select options from a dropdown menu, and the application queries the Oracle database accordingly.
